@@ -2,14 +2,12 @@
 <!DOCTYPE intercanvi [ 
     <!ELEMENT intercanvi (operacio+)>
     <!ELEMENT operacio (venda | compra)>
-    
     <!ELEMENT venda (titol+, quantitat, lliurat?, import)>
     <!ELEMENT titol (#PCDATA)>
     <!ELEMENT quantitat (#PCDATA)>
     <!ELEMENT lliurat (#PCDATA)>
-    <!ELEMENT import EMPTY>
+    <!ELEMENT import (#PCDATA)>
     <!ATTLIST import moneda CDATA #REQUIRED>
-
     <!ELEMENT compra (titol+, proveidor, data)>
     <!ELEMENT proveidor (#PCDATA)>
     <!ELEMENT data (dia, mes, any)>
@@ -24,7 +22,7 @@
             <titol>Llibre 2</titol>
             <quantitat>10</quantitat>
             <lliurat>si</lliurat>
-            <import moneda="EUR"/>
+            <import moneda="EURO"/>
         </venda>
     </operacio>
     <operacio>

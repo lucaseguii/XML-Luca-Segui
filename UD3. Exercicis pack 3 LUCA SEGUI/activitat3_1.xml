@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE llistavendes [
+    <!ELEMENT llistavendes (venda+)>
+    <!ELEMENT venda (import, comprador, venedor, data?, codifactura)>
+    <!ELEMENT import (#PCDATA)>
+    <!ATTLIST import moneda CDATA #REQUIRED>
+    <!ELEMENT comprador (#PCDATA)>
+    <!ELEMENT venedor (#PCDATA)>
+    <!ELEMENT data (#PCDATA)>
+    <!ELEMENT codifactura (#PCDATA)>
+]>
+<llistavendes>
+    <venda>
+        <import moneda="EURO">100</import>
+        <comprador>Dani Segura</comprador>
+        <venedor>Luca Segui</venedor>
+        <data>2024-01-16</data>
+        <codifactura>12341</codifactura>
+    </venda>
+    <venda>
+        <import moneda="EURO">200</import>
+        <comprador>Adri Garcia</comprador>
+        <venedor>Luca Segui</venedor>
+        <codifactura>12342</codifactura>
+    </venda>
+</llistavendes>
