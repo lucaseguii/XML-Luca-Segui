@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE intercanvi [ 
+    <!ELEMENT intercanvi (operacio+)>
+    <!ELEMENT operacio (venda | compra)>
+    
+    <!ELEMENT venda (titol+, quantitat, lliurat?, import)>
+    <!ELEMENT titol (#PCDATA)>
+    <!ELEMENT quantitat (#PCDATA)>
+    <!ELEMENT lliurat (#PCDATA)>
+    <!ELEMENT import EMPTY>
+    <!ATTLIST import moneda CDATA #REQUIRED>
+
+    <!ELEMENT compra (titol+, proveidor, data)>
+    <!ELEMENT proveidor (#PCDATA)>
+    <!ELEMENT data (dia, mes, any)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT any (#PCDATA)>
+]>
+<intercanvi>
+    <operacio>
+        <venda>
+            <titol>Llibre 1</titol>
+            <titol>Llibre 2</titol>
+            <quantitat>10</quantitat>
+            <lliurat>si</lliurat>
+            <import moneda="EUR"/>
+        </venda>
+    </operacio>
+    <operacio>
+        <compra>
+            <titol>Llibre 3</titol>
+            <titol>Llibre 4</titol>
+            <proveidor>Proveïdor Segura</proveidor>
+            <data>
+                <dia>15</dia>
+                <mes>02</mes>
+                <any>2024</any>
+            </data>
+        </compra>
+    </operacio>
+</intercanvi>

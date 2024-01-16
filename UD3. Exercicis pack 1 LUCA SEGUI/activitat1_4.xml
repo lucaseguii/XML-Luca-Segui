@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<correcio>
+  <document1><!-- La etiqueta <documento> i <p> i <destacar> i <imagen> estan malament tancades. -->
+    <documento>
+      <p>Mi Primer <destacar importancia="1">documento XML</destacar></p>
+      <p>Comienza con la etiqueta &lt;documento&gt;</p>
+      <p>A continuacion colocamos un elemento sin contenido</p>
+      <imagen fichero="imagen.gif"/>
+    </documento>
+  </document1>
+  <document2><!-- La etiqueta <libros> i <Libros> no coincideixen en majúscules i minúscules. L'etiqueta <autor>, els atributs nombre han de tenir el valor entre comilles.La etiqueta <descripcion> està malament tancada.-->
+    <libros>
+      <libro id="quijote">
+        <titulo>El Quijote</titulo>
+        <autor nombre="cervantes" apellido="cervantes">
+            <descripcion>Es el mejor libro de Cervantes.</descripcion>
+        </autor>
+      </libro>
+    </libros>
+  </document2>
+  <document3><!-- La primera linea ha de ser <?xml version="1.0" encoding="UTF-8"?> amb minúscules i amb la coma correcta.Les etiquetes <triangulo> les he tancat bé.La base i altura de cada <triangulo> han d'estar separades per un espai. He afegit <triangulos> per tenir com un nucli del xml que diguem-->
+    <triangulos>
+      <triangulo base="7" altura="5"/>
+      <triangulo base="2" altura="6"/>
+      <triangulo base="3" altura="3"/>
+    </triangulos>
+  </document3>
+  <document4> <!-- L'etiqueta <1> l'he canviat a <numero>.He tancat bé cada etiqueta amb </numero>. No es pot tenir el mateix nom d'atribut <letra>-->
+    <numeros>
+      <numero letra="u" letra1="n" letra2="o">1</numero>
+      <numero letra="d" letra1="o" letra2="s">22</numero>
+      <numero letra="s" letra1="e" letra2="i" letra3="s">666666</numero>
+    </numeros>
+  </document4>
+</correcio>

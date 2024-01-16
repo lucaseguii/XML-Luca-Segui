@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viatges>
+    <viatge>
+        <client>
+            <nom>Erik</nom>
+            <cognoms>Mocos Moll</cognoms>
+        </client>
+        <data_inici>2024-03-01</data_inici>
+        <data_finalitzacio>2024-03-10</data_finalitzacio>
+        <origen>Menorca</origen>
+        <destins>
+            <desti>
+                <ciutat>Eivissa</ciutat>
+                <hotel>Hotel GranClub</hotel>
+                <nits>4</nits>
+            </desti>
+            <desti>
+                <ciutat>Roma</ciutat>
+                <hotel>Hotel Colosseo</hotel>
+                <nits>3</nits>
+            </desti>
+            <desti>
+                <ciutat>Praga</ciutat>
+                <hotel>Hotel Bohemia</hotel>
+                <nits>2</nits>
+            </desti>
+        </destins>
+        <preu>2500</preu>
+    </viatge>
+    <viatge>
+        <client>
+            <nom>Alex Antonio</nom>
+            <cognoms>Lopez Carreras</cognoms>
+        </client>
+        <data_inici>2024-04-15</data_inici>
+        <data_finalitzacio>2024-04-25</data_finalitzacio>
+        <origen>Menorca</origen>
+        <destins>
+            <desti>
+                <ciutat>Londres</ciutat>
+                <hotel>Hotel Buckingham</hotel>
+                <nits>5</nits>
+            </desti>
+            <desti>
+                <ciutat>Ámsterdam</ciutat>
+                <hotel>Hotel Canal</hotel>
+                <nits>4</nits>
+            </desti>
+            <desti>
+                <ciutat>Bruselas</ciutat>
+                <hotel>Hotel Grand Place</hotel>
+                <nits>3</nits>
+            </desti>
+        </destins>
+        <preu>3200</preu>
+    </viatge>
+    <viatge>
+        <client>
+            <nom>Dani</nom>
+            <cognoms>Segura Camps</cognoms>
+        </client>
+        <data_inici>2024-06-05</data_inici>
+        <data_finalitzacio>2024-06-15</data_finalitzacio>
+        <origen>Menorca</origen>
+        <destins>
+            <desti>
+                <ciutat>New York</ciutat>
+                <hotel>Hotel Manhattan</hotel>
+                <nits>1</nits>
+            </desti>
+            <desti>
+                <ciutat>Mallorca</ciutat>
+                <hotel>Hotel White</hotel>
+                <nits>4</nits>
+            </desti>
+            <desti>
+                <ciutat>Tokio</ciutat>
+                <hotel>Hotel Tokyo</hotel>
+                <nits>3</nits>
+            </desti>
+        </destins>
+        <preu>5000</preu>
+    </viatge>
+</viatges>

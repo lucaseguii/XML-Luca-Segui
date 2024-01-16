@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comanda [
+    <!ELEMENT comanda (tractor+)>
+    <!ELEMENT tractor (component+)>
+    <!ELEMENT component (nomFabricant, dataEntrega, fràgil?, pes, nombreSerie, kmMaxims?)>
+    <!ATTLIST nomFabricant obligatori CDATA #REQUIRED>
+    <!ELEMENT dataEntrega (dia?, mes, any)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT any (#PCDATA)>
+    <!ELEMENT fràgil (#PCDATA)>
+    <!ELEMENT pes (#PCDATA)>
+    <!ATTLIST pes unitatPes (quilos | grams) #REQUIRED>
+    <!ELEMENT nombreSerie (#PCDATA)>
+    <!ELEMENT kmMaxims (#PCDATA)>
+]>
+<comanda>
+    <tractor>
+        <component>
+            <nomFabricant obligatori="true">Dani Segura</nomFabricant>
+            <dataEntrega>
+                <dia>01</dia>
+                <mes>03</mes>
+                <any>2022</any>
+            </dataEntrega>
+            <fràgil>si</fràgil>
+            <pes unitatPes="quilos">1500</pes>
+            <nombreSerie>ABC123</nombreSerie>
+            <kmMaxims>50000</kmMaxims>
+        </component>
+        <component>
+            <nomFabricant obligatori="true">Adri Garcia</nomFabricant>
+            <dataEntrega>
+                <mes>04</mes>
+                <any>2022</any>
+            </dataEntrega>
+            <pes unitatPes="grams">500</pes>
+            <nombreSerie>XYZ456</nombreSerie>
+        </component>
+    </tractor>
+</comanda>
