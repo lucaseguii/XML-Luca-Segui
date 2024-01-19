@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE majorista_llibres [
+    <!ELEMENT majorista_llibres (operacio+)>
+    <!ELEMENT operacio (venda | compra)+>
+    <!ELEMENT venda (titol+, quantitat, lliurat?, import)>
+    <!ELEMENT titol (#PCDATA)>
+    <!ELEMENT quantitat (#PCDATA)>
+    <!ELEMENT lliurat (#PCDATA)>
+    <!ELEMENT import (#PCDATA)>
+    <!ATTLIST import moneda CDATA #REQUIRED>
+    <!ELEMENT compra (titol+, proveidor, data)>
+    <!ELEMENT titol (#PCDATA)>
+    <!ELEMENT proveidor (#PCDATA)>
+    <!ELEMENT data (dia, mes, any)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT any (#PCDATA)>
+]>
+<majorista_llibres>
+    <operacio>
+        <venda>
+            <titol>Llibre 1</titol>
+            <titol>Llibre 2</titol>
+            <quantitat>100</quantitat>
+            <lliurat>si</lliurat>
+            <import moneda="EUR">50</import>
+        </venda>
+        <compra>
+            <titol>Llibre 3</titol>
+            <titol>Llibre 4</titol>
+            <proveidor>Segura</proveidor>
+            <data>
+                <dia>15</dia>
+                <mes>03</mes>
+                <any>2024</any>
+            </data>
+        </compra>
+    </operacio>
+</majorista_llibres>

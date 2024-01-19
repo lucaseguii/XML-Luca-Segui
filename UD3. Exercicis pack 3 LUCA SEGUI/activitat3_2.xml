@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comandes [
+    <!ELEMENT comandes (comanda*)>
+    <!ELEMENT comanda (nserie, quantitat, pes?)>
+    <!ELEMENT nserie (#PCDATA)>
+    <!ELEMENT quantitat (#PCDATA)>
+    <!ELEMENT pes (#PCDATA)>
+]>
+<comandes>
+    <comanda>
+        <nserie>1234</nserie>
+        <quantitat>5</quantitat>
+        <pes>5.5</pes>
+    </comanda>
+    <comanda>
+        <nserie>12345</nserie>
+        <quantitat>7</quantitat>
+    </comanda>
+</comandes>

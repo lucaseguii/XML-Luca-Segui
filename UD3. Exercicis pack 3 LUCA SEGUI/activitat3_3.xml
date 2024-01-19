@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE majorista [
+    <!ELEMENT majorista (entrega+)>
+    <!ELEMENT entrega (lot+)>
+    <!ELEMENT lot (palet+)>
+    <!ELEMENT palet (caixes, contingut, pes?)>
+    <!ELEMENT caixes (#PCDATA)>
+    <!ELEMENT contingut (component+)>
+    <!ELEMENT component (nom, procedencia*, numero_serie, pes_individual, unitat_pes?)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT procedencia (#PCDATA)>
+    <!ELEMENT numero_serie (#PCDATA)>
+    <!ELEMENT pes_individual (#PCDATA)>
+    <!ELEMENT unitat_pes (#PCDATA)>
+    <!ATTLIST palet palet_id ID #REQUIRED>
+    <!ATTLIST component component_id ID #REQUIRED>
+]>
+<majorista>
+    <entrega>
+        <lot>
+            <palet palet_id="p1">
+                <caixes>5</caixes>
+                <contingut>
+                    <component component_id="c1">
+                        <nom>Component 1</nom>
+                        <procedencia>España</procedencia>
+                        <numero_serie>123456</numero_serie>
+                        <pes_individual>2.5</pes_individual>
+                        <unitat_pes>Kg</unitat_pes>
+                    </component>
+                </contingut>
+                <pes>50</pes>
+            </palet>
+        </lot>
+    </entrega>
+</majorista>
