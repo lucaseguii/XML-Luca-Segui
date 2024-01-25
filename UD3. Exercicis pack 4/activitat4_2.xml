@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE llistacursos [
+  <!ELEMENT llistacursos (curso+)>
+  <!ELEMENT curso (alumnes+)>
+  <!ELEMENT alumne (dni, nom, cognom, segoncognom?, llistaasignatures)>
+  <!ELEMENT dni (#PCDATA)>
+  <!ELEMENT nom (#PCDATA)>
+  <!ELEMENT cognom (#PCDATA)>
+  <!ELEMENT segoncognom (#PCDATA)>
+  <!ELEMENT llistaasignatures(asignatura+)>
+  <!ELEMENT asignatura (nom, codi, professor)>
+  <!ELEMENT professor (NRP,nom, cognom, segoncognom?)>
+  <!ATTLIST asignatura codi CDATA #REQUIRED>
+  <!ATTLIST professor NRP CDATA #REQUIRED>
+]>
+<llistacursos>
+  <curso>
+    <alumnes>
+      <alumne>
+        <dni>41608121L</dni>
+        <nom>Luca</nom>
+        <cognom>Segui</cognom>
+        <llistaasignatures>
+          <asignatura codi="ABC123">
+            <nom>Informática</nom>
+            <professor NRP="A1234">
+              <nom>Joan</nom>
+              <cognom>Carreras</cognom>
+            </professor>
+          </asignatura>
+        </llistaasignatures>
+      </alumne>
+    </alumnes>
+  </curso>
+</llistacursos>

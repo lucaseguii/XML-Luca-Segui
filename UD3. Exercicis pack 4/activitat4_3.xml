@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productes [
+  <!ELEMENT productes (llibre | quadern | llapis)+>
+  <!ELEMENT llibre EMPTY>
+  <!ATTLIST llibre titol CDATA #REQUIRED>
+  <!ELEMENT quadern EMPTY>
+  <!ATTLIST quadern num_fulles CDATA #IMPLIED>
+  <!ELEMENT llapis EMPTY>
+  <!ATTLIST llapis numero CDATA #REQUIRED>
+]>

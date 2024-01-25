@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE llistafactures [
+  <!ELEMENT llistafactures(factura+)>
+  <!ELEMENT factura (data?, emissor, pagador, import)>
+  <!ATTLIST factura data CDATA #IMPLIED>
+  <!ELEMENT emissor(nom, cif, volumvendes?)>
+  <!ELEMENT pagador(nom,cif,volumvendes?)>
+  <!ELEMENT nom(#PCDATA)>
+  <!ELEMENT cif(#PCDATA)>
+  <!ELEMENT volumvendes(#PCDATA)>
+  <!ELEMENT import(#PCDATA)>
+]>
+<llistafactures>
+  <factura data="2024-01-23">
+    <emissor>
+      <nom>Dani Segura</nom>
+      <cif>41608121A</cif>
+      <volumvendes>2000</volumvendes>
+    </emissor>
+    <pagador>
+      <nom>Erik Mozos</nom>
+      <cif>41608121B</cif>
+      <volumvendes>1000</volumvendes>
+    </pagador>
+    <import>50</import>
+  </factura>
+  <factura>
+    <emissor>
+      <nom>Adri Garcia</nom>
+      <cif>41608121C</cif>
+    </emissor>
+    <pagador>
+      <nom>Arnau Marques</nom>
+      <cif>41608121D</cif>
+    </pagador>
+    <import>70</import>
+  </factura>
+</llistafactures>
