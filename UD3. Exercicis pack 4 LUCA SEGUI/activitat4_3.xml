@@ -8,3 +8,11 @@
   <!ELEMENT llapis EMPTY>
   <!ATTLIST llapis numero CDATA #REQUIRED>
 ]>
+<productes>
+  <llibre titol="Diario de Greg 1"/>
+  <quadern num_fulles="80"/>
+  <llapis numero="1"/>
+  <llibre titol="Diario de Greg 2"/>
+  <llapis numero="2"/>
+  <quadern num_fulles="70"/>
+</productes>

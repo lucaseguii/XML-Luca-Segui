@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE arxius [
+<!ELEMENT arxius (futurs*, divises*, bons*, lletres*)>
+<!ELEMENT futurs (producte, preu, pais_procedencia?)>
+<!ELEMENT divises (nom, preu, estable_passat?, tipus_canvi*)>
+<!ELEMENT tipus_canvi (moneda, valor)>
+<!ELEMENT bons (pais_procedencia, valors_bons)>
+<!ELEMENT valors_bons (desitjat, minim, maxim)>
+<!ELEMENT lletres (tipus_interes, pais_emissor)>
+<!ELEMENT producte (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+<!ELEMENT pais_procedencia (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT estable_passat (#PCDATA)>
+<!ELEMENT moneda (#PCDATA)>
+<!ELEMENT valor (#PCDATA)>
+<!ELEMENT desitjat (#PCDATA)>
+<!ELEMENT minim (#PCDATA)>
+<!ELEMENT maxim (#PCDATA)>
+<!ELEMENT tipus_interes (#PCDATA)>
+<!ELEMENT pais_emissor (#PCDATA)>
+<!ELEMENT d_on_es (#PCDATA)>
+]>
+<arxius>
+  <futurs>
+    <producte>Producte1</producte>
+    <preu>100</preu>
+    <pais_procedencia>Madrid</pais_procedencia>
+  </futurs>
+
+  <divises>
+    <nom>Divisa1</nom>
+    <preu>50</preu>
+    <estable_passat>true</estable_passat>
+    <tipus_canvi>
+      <moneda>Euro</moneda>
+      <valor>1.5</valor>
+    </tipus_canvi>
+    <tipus_canvi>
+      <moneda>Pounds</moneda>
+      <valor>2.0</valor>
+    </tipus_canvi>
+  </divises>
+
+  <bons>
+    <pais_procedencia>Egipte</pais_procedencia>
+    <valors_bons>
+      <desitjat>120</desitjat>
+      <minim>100</minim>
+      <maxim>150</maxim>
+    </valors_bons>
+  </bons>
+
+  <lletres>
+    <tipus_interes>3.5%</tipus_interes>
+    <pais_emissor>Espanya</pais_emissor>
+  </lletres>
+</arxius>
