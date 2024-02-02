@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fitxes
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-xs:noNamespaceSchemaLocation="fitxes.xsd">
+xs:noNamespaceSchemaLocation="activitat5_3.xsd">
 <fitxa numero="1">
 <nom>Ana Sanz Tin</nom>
 <edat>22</edat>

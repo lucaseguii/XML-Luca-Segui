@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fitxes xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="fitxes.xsd">
+<fitxes xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="activitat5_6.xsd">
   <fitxa>
     <nom>Antonio Machado Ruiz</nom>
     <inicials>AMR</inicials>
@@ -7,7 +7,7 @@
   </fitxa>
   <fitxa>
     <nom>Mario Moreno</nom>
-    <inicials>MM</inicials>
+    <inicials>MMM</inicials>
     <edat>23</edat>
   </fitxa>
   <fitxa>
