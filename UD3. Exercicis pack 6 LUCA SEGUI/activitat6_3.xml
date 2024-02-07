@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subhasta xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="subhasta.xsd">
+  <objecte>
+    <propietari>Dani Segura</propietari>
+    <preu_sortida>1200.50</preu_sortida>
+    <preu_minim>1000.00</preu_minim>
+  </objecte>
+  <objecte>
+    <propietari>Adri Garcia</propietari>
+    <preu_sortida>800.75</preu_sortida>
+  </objecte>
+</subhasta>
