@@ -1,1 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<Empleats>
+  <Empleat>
+    <Nom>Dani</Nom>
+    <ID>S1</ID>
+    <DataIniciContracte>
+      <Dia>01</Dia>
+      <Mes>01</Mes>
+      <Any>2024</Any>
+    </DataIniciContracte>
+    <LlocOcupat>Enginyer</LlocOcupat>
+    <CapDirecte>AA</CapDirecte>
+    <Salari>10000</Salari>
+    <TitolsAcademics>Grau Superior D'Informatica</TitolsAcademics>
+    <Seu>Barcelona</Seu>
+    <Observacions>Es un catacrak</Observacions>
+  </Empleat>
+</Empleats>

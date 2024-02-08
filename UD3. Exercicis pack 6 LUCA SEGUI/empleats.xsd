@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="gDay">
+    <xs:restriction base="xs:gDay"/>
+  </xs:simpleType>
+  <xs:element name="Empleat" type="EmpleatType"/>
+  <xs:complexType name="EmpleatType">
+    <xs:sequence>
+      <xs:element name="Nom" type="xs:string"/>
+      <xs:element name="ID" type="xs:ID"/>
+      <xs:element name="DataIniciContracte" type="DataContracteType"/>
+      <xs:element name="LlocOcupat" type="xs:string"/>
+      <xs:element name="LlocsAnteriors" type="xs:string" minOccurs="0"/>
+      <xs:element name="CapDirecte" type="xs:IDREF"/>
+      <xs:element name="Salari" type="xs:decimal"/>
+      <xs:element name="TitolsAcademics" type="xs:string" minOccurs="0"/>
+      <xs:element name="Seu" type="SeuType"/>
+      <xs:element name="Observacions" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DataContracteType">
+    <xs:sequence>
+      <xs:element name="Dia" type="xs:gDay"/>
+      <xs:element name="Mes" type="xs:gMonth"/>
+      <xs:element name="Any" type="xs:gYear"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="SeuType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Madrid"/>
+      <xs:enumeration value="Barcelona"/>
+      <xs:enumeration value="València"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
