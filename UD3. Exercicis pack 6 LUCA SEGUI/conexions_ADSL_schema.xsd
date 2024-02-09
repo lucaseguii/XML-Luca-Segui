@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="velocitat_transferenciaType">
+    <xs:sequence>
+      <xs:element name="pujada" type="xs:decimal"/>
+      <xs:element name="baixada" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="altaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="gratis" type="xs:string" use="required"/>
+        <xs:attribute name="permanencia" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="promocioType">
+    <xs:sequence>
+      <xs:element name="promocio_preu" type="xs:decimal"/>
+    </xs:sequence>
+    <xs:attribute name="fins" type="xs:date" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="preuType">
+    <xs:sequence>
+      <xs:element name="alta" type="altaType"/>
+      <xs:element name="linea" type="xs:decimal"/>
+      <xs:element name="promocio" type="promocioType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="mensual" type="xs:decimal"/>
+      <xs:element name="total_mensual" type="xs:decimal"/>
+    </xs:sequence>
+    <xs:attribute name="moneda" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="ofertaType">
+    <xs:sequence>
+      <xs:element name="nom_compania" type="xs:string"/>
+      <xs:element name="velocitat_transferencia" type="velocitat_transferenciaType"/>
+      <xs:element name="preu" type="preuType"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:integer" use="required"/>
+    <xs:attribute name="nom" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="conexions_ADSLType">
+    <xs:sequence>
+      <xs:element name="oferta" type="ofertaType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="conexions_ADSL" type="conexions_ADSLType"/>
+</xs:schema>

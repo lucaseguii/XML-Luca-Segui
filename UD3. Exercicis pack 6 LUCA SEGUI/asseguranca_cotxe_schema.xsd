@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="cobramentType">
+    <xs:sequence>
+      <xs:element name="financament" type="xs:integer"/>
+      <xs:element name="mensualitat" type="xs:decimal"/>
+      <xs:element name="mensualitativa" type="xs:decimal"/>
+      <xs:element name="anual" type="xs:decimal"/>
+    </xs:sequence>
+    <xs:attribute name="en" type="xs:string" use="required"/>
+    <xs:attribute name="mensual" type="xs:string" use="required"/>
+  </xs:complexType> 
+  <xs:complexType name="descompteedatType">
+    <xs:attribute name="edad" type="xs:integer" use="required"/>
+    <xs:attribute name="import" type="xs:integer" use="required"/>
+  </xs:complexType> 
+  <xs:complexType name="promocionsType">
+    <xs:sequence>
+      <xs:element name="descompteonline" type="xs:integer" minOccurs="0"/>
+      <xs:element name="descompteedat" type="descompteedatType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="nouclient" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="assegurancaType">
+    <xs:sequence>
+      <xs:element name="asseguradora" type="xs:string"/>
+      <xs:element name="geocobertura" type="xs:string"/>
+      <xs:element name="cobrament" type="cobramentType"/>
+      <xs:element name="promocions" type="promocionsType"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:integer" use="required"/>
+    <xs:attribute name="denominacio" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:complexType name="asseguranca_cotxeType">
+    <xs:sequence>
+      <xs:element name="asseguranca" type="assegurancaType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="asseguranca_cotxe" type="asseguranca_cotxeType"/>
+</xs:schema>
